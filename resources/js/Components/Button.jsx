@@ -1,4 +1,4 @@
-export default function Button({type, text, color}) {
+export default function Button({type, children, color, customColor, onClick}) {
 
   const colors = {
     primary: "bg-blue-700 hover:bg-blue-600 text-white",
@@ -7,6 +7,6 @@ export default function Button({type, text, color}) {
   }
 
   return (
-    <button type={type} className={`p-2 m-2 border-none rounded-lg inline-block ${colors[color]}`} >{text}</button>
-  )
+    <button type={type} className={`p-2 m-2 border-none rounded-lg inline-block font-semibold ${colors[color]} ${customColor}`} onClick={onClick} >{children}</button>
+  );
 }
