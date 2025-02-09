@@ -3,7 +3,7 @@ import { RiCloseLargeFill } from "react-icons/ri";
 
 export default function Sidebar({ sidebar, handleSidebar }) {
   return (
-    <aside className={`block md:hidden backdrop-blur-md bg-white/70 duration-700  ease-in-out fixed inset-y-0 ${sidebar ? 'right-0' : '-right-1/2'} w-1/2 z-[200]`}>
+    <aside className={`block md:hidden backdrop-blur-md bg-white/70 duration-700  ease-in-out fixed inset-y-0 ${sidebar ? 'right-0' : '-right-1/2'} w-1/2 z-[500]`}>
         <span className="rounded-lg absolute top-0 left-0 p-1 m-2 cursor-pointer hover:bg-white active:bg-red-600" onClick={handleSidebar}>
           <RiCloseLargeFill className="text-2xl" />
           </span>

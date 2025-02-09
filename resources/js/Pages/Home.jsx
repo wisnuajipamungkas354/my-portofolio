@@ -1,8 +1,8 @@
 import React, { useState, useEffect} from "react";
 import Button from "../Components/Button";
 
-export default function Home({}) {
-  const listKeahlian = ['Web Developer', 'Technician'];
+export default function Home({ listSkills }) {
+  const listKeahlian = listSkills.map((skill) => skill.nama_skill);
 
   const [isVisible, setIsVisible] = useState(false);
   const [displayText,setDisplayText] = useState();
@@ -61,10 +61,10 @@ export default function Home({}) {
       <div className="flex flex-col justify-center items-center">
         <h3 className="text-transparent text-center text-2xl md:text-3xl text-white">Hi, I'm Wisnu Aji Pamungkas</h3>
         <h1 className="text-white text-center text-3xl md:text-4xl font-semibold">a <span className="font-bold text-yellow-300" >{displayText}</span> <span className={`absolute ${cursor ? 'inline' : 'hidden'}`}> |</span></h1>
-        {/* <span className="flex flex-row flex-wrap justify-center">
-          <Button type="button" color="primary" onClick={() => {}}>Hubungi Saya</Button>
-          <Button type="button" color="warning" onClick={() => {}}>Beri Ulasan</Button>
-        </span> */}
+        <span className="mt-5 flex flex-row flex-wrap justify-center">
+          <a className="p-2 m-2 border-none rounded-lg inline-block font-semibold text-sm text-black bg-yellow-400 hover:bg-yellow-300" onClick={() => {}}>Download CV</a>
+          <a href="#review" className="p-2 m-2 border-none rounded-lg inline-block font-semibold text-sm text-black bg-yellow-400 hover:bg-yellow-300">Give me your Rating</a>
+        </span>
       </div>
     </div>
   </div>

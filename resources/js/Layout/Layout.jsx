@@ -13,7 +13,7 @@ export default function Layout({ children }) {
 
   return (
     <>
-      <header className="p-2 px-5 w-full sm:px-4 md:px-6 lg:px-10 sticky top-0 z-40 bg-gradient-to-r from-sky-400 to-indigo-600">
+      <header className="p-2 px-5 w-full sm:px-4 md:px-6 lg:px-10 sticky top-0 z-[300] bg-gradient-to-r from-sky-400 to-indigo-600">
         <div className="flex flex-row justify-between">
           <h1 className="pt-1 text-white text-2xl font-semibold"><span className="text-yellow-300">P</span>ortofolio</h1>
           <nav className="text-white hidden md:flex flex-row gap-3">

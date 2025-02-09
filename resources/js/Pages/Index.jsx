@@ -7,17 +7,17 @@ import Experience from "./Experience";
 import Portofolio from "./Portofolio";
 import Review from "./Review";
 
-const Index = () => {
-
+const Index = ({ skills, reviews }) => {
+  
   return (
     <>
-      <Home />
+      <Home listSkills={skills} />
       <Socmed />
       <About />
       <SkillSet />
       <Experience />
       <Portofolio />
-      <Review />
+      <Review reviews={reviews} />
     </>
   );
 }
